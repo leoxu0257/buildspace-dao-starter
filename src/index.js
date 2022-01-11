@@ -6,6 +6,8 @@ import App from './App';
 // Import ThirdWeb
 import { ThirdwebWeb3Provider } from '@3rdweb/hooks';
 
+
+
 // Include what chains you wanna support.
 // 4 = Rinkeby.
 const supportedChainIds = [4];
