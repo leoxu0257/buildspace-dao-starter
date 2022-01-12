@@ -8,7 +8,7 @@ const sdk = new ThirdwebSDK("rinkeby");
 
 // We can grab a reference to our ERC-1155 contract.
 const bundleDropModule = sdk.getBundleDropModule(
-  "INSERT_BUNDLE_DROP_ADDRESS",
+  "0xf28E408DaF77181fa5CE21bf5d12Ba1D1fE03B4f",
 );
 
 const App = () => {
@@ -55,16 +55,27 @@ const App = () => {
       });
   }, [address]);
 
+  
   if (!address) {
     return (
       <div className="landing">
-        <h1>Welcome to NarutoDAO</h1>
+        <h1>Welcome to AllenDAO</h1>
         <button onClick={() => connectWallet("injected")} className="btn-hero">
           Connect your wallet
         </button>
       </div>
     );
   }
+
+  // Add this little piece!
+  if (hasClaimedNFT) {
+    return (
+      <div className="member-page">
+        <h1>🍪DAO Member Page</h1>
+        <p>Congratulations on being a member</p>
+      </div>
+    );
+  };
   
   const mintNft = () => {
     setIsClaiming(true);
