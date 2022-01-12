@@ -11,7 +11,7 @@ const bundleDrop = sdk.getBundleDropModule(
       {
         name: "AllenBot",
         description: "This NFT will give you access to AllenDAO!",
-        image: readFileSync("scripts/assets/Allen.png"),
+        image: readFileSync("scripts/assets/Allen.jpg"),
       },
     ]);
     console.log("✅ Successfully created a new NFT in the drop!");

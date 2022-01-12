@@ -12,7 +12,7 @@ const app = sdk.getAppModule("0x675D8c7Fc94834cDbb14dE2a5789E7972fC20Ba8");
       // A description for the collection.
       description: "A DAO for fans of Allen.",
       // The image for the collection that will show up on OpenSea.
-      image: readFileSync("scripts/assets/Allen.png"),
+      image: readFileSync("scripts/assets/Allen.jpg"),
       // We need to pass in the address of the person who will be receiving the proceeds from sales of nfts in the module.
       // We're planning on not charging people for the drop, so we'll pass in the 0x0 address
       // you can set this to your own wallet address if you want to charge for the drop.
